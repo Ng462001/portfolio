@@ -10,7 +10,7 @@ const About = () => {
           <p>
             I'm Nikhil Gahane from Bramhapuri, a passionate web developer with a strong foundation in full-stack
             development.
-            I have experience in HTML, CSS, JavaScript, React, Node.js, and MongoDB.
+            I have experience in HTML, CSS, JavaScript, React, Node.js and MySQL
           </p>
         </div>
 
@@ -75,7 +75,7 @@ const About = () => {
       <section id="skills" className="skills section light-background">
         <div className="container section-title" data-aos="fade-up">
           <h2>Skills</h2>
-          <p>I have experience in HTML, CSS, JavaScript, React, Node.js, and MongoDB.</p>
+          <p>I have experience in HTML, CSS, JavaScript, React, Node.js, and MySQL.</p>
         </div>
 
         <div className="container" data-aos="fade-up" data-aos-delay="100">

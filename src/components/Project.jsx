@@ -6,8 +6,7 @@ const Project = () => {
       <div className="container section-title mt-4" data-aos="fade-up">
         <h2>Project</h2>
         <p>
-          "I'm Nikhil Gahane from Bramhapuri, a passionate web developer with a strong foundation in full-stack
-          development."
+          With hands-on experience in developing dynamic and interactive web applications, I have successfully built projects are mentioned below.
         </p>
       </div>
 
