@@ -18,7 +18,7 @@ const About = () => {
 
           <div className="row gy-4 justify-content-center">
             <div className="col-lg-4">
-              <img src="/myimage.jpg" className="img-fluid" alt="" />
+              <img src="/about.jpg" className="img-fluid" alt="" />
             </div>
             <div className="col-lg-8 content">
               <h2>Student &amp; Web Developer.</h2>
