@@ -1,40 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const { name, email, subject, message } = formData;
-    const whatsappMessage = `
-      Hello, I have a new message:
-      Name: ${name}
-      Email: ${email}
-      Subject: ${subject}
-      Message: ${message}
-    `;
-
-    // URL encode the message to handle spaces and special characters
-    const encodedMessage = encodeURIComponent(whatsappMessage);
-    const whatsappLink = `https://wa.me/+919422498134?text=${encodedMessage}`;
-
-    // Open WhatsApp chat
-    window.open(whatsappLink, '_blank');
-  };
-
   return (
     <>
       {/* Contact Section */}
@@ -78,23 +44,21 @@ const Contact = () => {
                   </div>
                 </div>
                 {/* End Info Item */}
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=..."
-                  style={{ border: 0, width: '100%', height: '270px' }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.2447172859665!2d79.85879827485026!3d20.618879680929847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2c9b000001350d%3A0xa01a3f68e0b6305e!2sMASTER%20COLONY!5e0!3m2!1sen!2sin!4v1738301348149!5m2!1sen!2sin"
+                  style={{ border: 0, width: '100%', height: '270px' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
               </div>
             </div>
 
             <div className="col-lg-7">
               <form
-                onSubmit={handleSubmit}
+                action="https://api.web3forms.com/submit"
+                method="POST"
                 className="php-email-form"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
+                <input type="hidden" name="access_key" value={import.meta.env.VITE_ACCESS_KEY}></input>
                 <div className="row gy-4">
                   <div className="col-md-6">
                     <label htmlFor="name-field" className="pb-2">
@@ -106,8 +70,6 @@ const Contact = () => {
                       id="name-field"
                       className="form-control"
                       required
-                      value={formData.name}
-                      onChange={handleChange}
                     />
                   </div>
 
@@ -121,8 +83,6 @@ const Contact = () => {
                       name="email"
                       id="email-field"
                       required
-                      value={formData.email}
-                      onChange={handleChange}
                     />
                   </div>
 
@@ -136,8 +96,6 @@ const Contact = () => {
                       name="subject"
                       id="subject-field"
                       required
-                      value={formData.subject}
-                      onChange={handleChange}
                     />
                   </div>
 
@@ -151,8 +109,6 @@ const Contact = () => {
                       rows="10"
                       id="message-field"
                       required
-                      value={formData.message}
-                      onChange={handleChange}
                     ></textarea>
                   </div>
 
