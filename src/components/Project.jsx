@@ -19,7 +19,7 @@ const Project = () => {
             <h6 className='text-muted'>React, Node.js, Express, MySql</h6>
             <p className="card-text mt-2 mb-2" style={{ textAlign: "justify" }}>This web page is a part of my portfolio. It is a simple React application that displays a simple web page with a navigation bar and a few sections.</p>
             <div className='d-flex justify-content-center gap-3'>
-              <a href="https://github.com/Ng462001/ngtech" target='_blank'  className="btn btn-secondary"> <i className="bi bi-github"></i> GitHub</a>
+              <a href="https://github.com/Ng462001/ngtech" target='_blank' className="btn btn-secondary"> <i className="bi bi-github"></i> GitHub</a>
               <a href="https://ngtech-olive.vercel.app/" target='_blank' className="btn btn-success"><i class="bi bi-link"></i> Link</a>
             </div>
           </div>

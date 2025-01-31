@@ -60,6 +60,34 @@ const Resume = () => {
                 <h5>Percentage: 81.15%</h5>
               </div>
 
+              <h3 className="resume-title">Internship</h3>
+
+              <div className="resume-item">
+                <h4>Web Developer Intern</h4>
+                <p ><em>Anweb Technology</em></p>
+                <h5 >Jan 2024 - Jun 2024</h5>
+
+                <ul>
+                  <li>
+                    Designed and developed a website with flawless payment gateway integration, Demonstrating Mastery in HTML5, CSS3,
+                    Bootstrap, React and Node Express.
+                  </li>
+                  <li>
+                    Created an exceptional User experience and ensure seamless functionality.
+                  </li>
+                  <li>
+                    Make the website responsive and user-friendly.
+                  </li>
+                  <li>
+                    Identified and resolved front-end issues to enhance functionality and user experience.
+                  </li>
+                  <li>
+                    Optimized web pages for faster load times and efficient resource management.
+                  </li>
+
+
+                </ul>
+              </div>
             </div>
 
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
@@ -88,7 +116,7 @@ const Resume = () => {
                     content efficiently.
                   </li>
                   <li>
-                    <a href="https://ngtech-olive.vercel.app">Project Link</a>
+                    <a href="https://ngtech-olive.vercel.app" target='_blank'>Project Link</a>
                   </li>
                 </ul>
               </div>
@@ -114,7 +142,31 @@ const Resume = () => {
                     Integrated responsive design and intuitive UI using React to enhance user experience.
                   </li>
                   <li>
-                    <a href="https://jobsearchproject.vercel.app">Project Link</a>
+                    <a href="https://jobsearchproject.vercel.app" target='_blank'>Project Link</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="resume-item">
+                <h4>E-Learning Website</h4>
+                <h5>Dec 2024</h5>
+                <p>
+                  <em>
+                    HTML, CSS, Bootstrap, Javascript
+                  </em>
+                </p>
+                <ul>
+                  <li>
+                    User Interface: Designed a clean and user-friendly interface with Bootstrap for responsiveness and consistent styling.
+                  </li>
+                  <li>
+                    Responsive Design: Ensured compatibility across devices with mobile-first design principles using Bootstrap grid system.
+                  </li>
+                  <li>
+                    Performance Optimization: Optimized website performance for faster loading times and better user experience.
+                  </li>
+                  <li>
+                    <a href="https://e-learning-project-live.vercel.app" target='_blank'>Project Link</a>
                   </li>
                 </ul>
               </div>

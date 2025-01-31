@@ -14,16 +14,8 @@ const Sidebar = () => {
 
   return (
     <>
-      <header
-        id="header"
-        className={`header dark-background d-flex flex-column ${showSidebar ? "header-show" : ""
-          }`}
-      >
-        <i
-          className={`header-toggle d-xl-none bi ${showSidebar ? "bi-x" : "bi-list"
-            }`}
-          onClick={toggleSidebar}
-        ></i>
+      <header id="header" className={`header dark-background d-flex flex-column ${showSidebar ? "header-show" : ""}`}>
+        <i className={`header-toggle d-xl-none bi ${showSidebar ? "bi-x" : "bi-list"}`} onClick={toggleSidebar}></i>
 
         <div className="profile-img">
           <img src="myimage.jpg" alt="" className="img-fluid" />
@@ -34,24 +26,23 @@ const Sidebar = () => {
         </a>
 
         <div className="social-links text-center">
-          <a
-            href="https://www.facebook.com/share/1ER3uqn3Sg"
-            className="facebook"
-          >
+
+          <a href="https://www.facebook.com/share/1ER3uqn3Sg" target="_blank" className="facebook">
             <i className="bi bi-facebook"></i>
           </a>
-          <a
-            href="https://www.instagram.com/nikhilgahane?igsh=MTVubzUwZzVldzk0Yg=="
-            className="instagram"
-          >
+
+          <a href="https://www.instagram.com/nikhilgahane?igsh=MTVubzUwZzVldzk0Yg==" target="_blank" className="instagram">
             <i className="bi bi-instagram"></i>
           </a>
-          <a href="https://github.com/Ng462001" className="GitHub">
+
+          <a href="https://github.com/Ng462001" target="_blank" className="GitHub">
             <i className="bi bi-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/nikhil-gahane-94b967220" className="linkedin">
+
+          <a href="https://www.linkedin.com/in/nikhil-gahane-94b967220" target="_blank" className="linkedin">
             <i className="bi bi-linkedin"></i>
           </a>
+
         </div>
 
         <nav id="navmenu" className="navmenu">
@@ -85,7 +76,7 @@ const Sidebar = () => {
         </nav>
       </header>
     </>
-  );
-};
+  )
+}
 
 export default Sidebar;
