@@ -131,8 +131,7 @@ const Resume = () => {
                 </p>
                 <ul>
                   <li>
-                    Implemented secure user authentication and authorization to ensure data protection and role-based
-                    access.
+                    Implemented secure user authentication and authorization to ensure data protection.
                   </li>
                   <li>
                     Built features for fetching job posting, updates, and deletions, enabling Users to manage listings
