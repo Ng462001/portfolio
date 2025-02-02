@@ -3,7 +3,7 @@ import React from 'react'
 const Project = () => {
   return (
     <>
-      <div className="container section-title mt-4" data-aos="fade-up">
+      <div id='project' className=" container section-title mt-5" data-aos="fade-up">
         <h2>Project</h2>
         <p>
           With hands-on experience in developing dynamic and interactive web applications, I have successfully built projects are mentioned below.
@@ -20,7 +20,7 @@ const Project = () => {
             <p className="card-text mt-2 mb-2" style={{ textAlign: "justify" }}>This web page is a part of my portfolio. It is a simple React application that displays a simple web page with a navigation bar and a few sections.</p>
             <div className='d-flex justify-content-center gap-3'>
               <a href="https://github.com/Ng462001/ngtech" target='_blank' className="btn btn-secondary"> <i className="bi bi-github"></i> GitHub</a>
-              <a href="https://ngtech-olive.vercel.app/" target='_blank' className="btn btn-success"><i class="bi bi-link"></i> Link</a>
+              <a href="https://ngtech-olive.vercel.app/" target='_blank' className="btn btn-success"><i className="bi bi-link"></i> Link</a>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@ const Project = () => {
             <p className="card-text mt-2 mb-2" style={{ textAlign: "justify" }}>This web page is a part of my portfolio. It is a simple React application that displays a simple web page with a navigation bar and a few sections.</p>
             <div className='d-flex justify-content-center gap-3'>
               <a href="https://github.com/Ng462001/jobs-project" target='_blank' className="btn btn-secondary"> <i className="bi bi-github"></i> GitHub</a>
-              <a href="https://jobsearchproject.vercel.app/" target='_blank' className="btn btn-success"><i class="bi bi-link"></i> Link</a>
+              <a href="https://jobsearchproject.vercel.app/" target='_blank' className="btn btn-success"><i className="bi bi-link"></i> Link</a>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@ const Project = () => {
             <p className="card-text mt-2 mb-2" style={{ textAlign: "justify" }}>This web page is a part of my portfolio. It is a simple React application that displays a simple web page with a navigation bar and a few sections.</p>
             <div className='d-flex justify-content-center gap-3'>
               <a href="https://github.com/Ng462001/e-learning-site" target='_blank' className="btn btn-secondary"> <i className="bi bi-github"></i> GitHub</a>
-              <a href="https://e-learning-project-live.vercel.app/" target='_blank' className="btn btn-success"><i class="bi bi-link"></i> Link</a>
+              <a href="https://e-learning-project-live.vercel.app/" target='_blank' className="btn btn-success"><i className="bi bi-link"></i> Link</a>
             </div>
           </div>
         </div>

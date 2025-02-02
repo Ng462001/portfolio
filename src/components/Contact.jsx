@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <>
       {/* Contact Section */}
-      <section id="contact" className="contact section">
+      <section id='contact' className="contact section">
         {/* Section Title */}
         <div className="container section-title" data-aos="fade-up">
           <h2>Contact</h2>
@@ -45,7 +45,7 @@ const Contact = () => {
                 </div>
                 {/* End Info Item */}
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.2447172859665!2d79.85879827485026!3d20.618879680929847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2c9b000001350d%3A0xa01a3f68e0b6305e!2sMASTER%20COLONY!5e0!3m2!1sen!2sin!4v1738301348149!5m2!1sen!2sin"
-                  style={{ border: 0, width: '100%', height: '270px' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                  style={{ border: 0, width: '100%', height: '270px' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
                 </iframe>
               </div>
             </div>

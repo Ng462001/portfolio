@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
 
-const Hero = () => {
+const Home = () => {
     useEffect(() => {
         const typed = new Typed(".typed", {
             strings: ["Student", "Developer", "Freelancer"],
@@ -17,7 +17,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id="hero" className="hero section dark-background">
+        <section id='home' className="hero section dark-background">
             <img src="/background.jpg" alt="background" />
             <div className="container" data-aos="fade-up" data-aos-delay="100">
                 <h2>Nikhil Gahane</h2>
@@ -29,4 +29,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Home;

@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
+  const [activeLink, setActiveLink] = useState("#home");
 
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
 
-  const hideSidebar = () => {
+  const hideSidebar = (id) => {
     setShowSidebar(false);
+    setActiveLink(id);
   };
 
   return (
@@ -26,57 +27,72 @@ const Sidebar = () => {
         </a>
 
         <div className="social-links text-center">
-
           <a href="https://www.facebook.com/share/1ER3uqn3Sg" target="_blank" className="facebook">
             <i className="bi bi-facebook"></i>
           </a>
-
           <a href="https://www.instagram.com/nikhilgahane?igsh=MTVubzUwZzVldzk0Yg==" target="_blank" className="instagram">
             <i className="bi bi-instagram"></i>
           </a>
-
           <a href="https://github.com/Ng462001" target="_blank" className="GitHub">
             <i className="bi bi-github"></i>
           </a>
-
           <a href="https://www.linkedin.com/in/nikhil-gahane-94b967220" target="_blank" className="linkedin">
             <i className="bi bi-linkedin"></i>
           </a>
-
         </div>
 
         <nav id="navmenu" className="navmenu">
           <ul>
             <li>
-              <NavLink to="/" onClick={hideSidebar}>
+              <a
+                href="#home"
+                className={activeLink === "#home" ? "active" : ""}
+                onClick={() => hideSidebar("#home")}
+              >
                 <i className="bi bi-house navicon"></i> Home
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink to="/about" onClick={hideSidebar}>
+              <a
+                href="#about"
+                className={activeLink === "#about" ? "active" : ""}
+                onClick={() => hideSidebar("#about")}
+              >
                 <i className="bi bi-person navicon"></i> About
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink to="/resume" onClick={hideSidebar}>
+              <a
+                href="#resume"
+                className={activeLink === "#resume" ? "active" : ""}
+                onClick={() => hideSidebar("#resume")}
+              >
                 <i className="bi bi-file-earmark-text navicon"></i> Resume
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink to="/project" onClick={hideSidebar}>
+              <a
+                href="#project"
+                className={activeLink === "#project" ? "active" : ""}
+                onClick={() => hideSidebar("#project")}
+              >
                 <i className="bi bi-hdd-stack navicon"></i> Projects
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink to="/contact" onClick={hideSidebar}>
+              <a
+                href="#contact"
+                className={activeLink === "#contact" ? "active" : ""}
+                onClick={() => hideSidebar("#contact")}
+              >
                 <i className="bi bi-envelope navicon"></i> Contact
-              </NavLink>
+              </a>
             </li>
           </ul>
         </nav>
       </header>
     </>
-  )
-}
+  );
+};
 
 export default Sidebar;
