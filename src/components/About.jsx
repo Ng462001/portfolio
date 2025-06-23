@@ -47,7 +47,7 @@ const About = () => {
                   <ul>
                     <li>
                       <i className="bi bi-chevron-right" />{' '}
-                      <strong>Age:</strong> <span>23</span>
+                      <strong>Age:</strong> <span>24</span>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right" />{' '}
