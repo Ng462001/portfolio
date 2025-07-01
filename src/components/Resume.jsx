@@ -63,7 +63,7 @@ const Resume = () => {
               <h3 className="resume-title">Internship</h3>
 
               <div className="resume-item">
-                <h4>Web Developer Intern</h4>
+                <h4>Web Development Intern</h4>
                 <p ><em>Digital Ipsum</em></p>
                 <h5 >1st May 2025 - 30th Jun 2025</h5>
 
