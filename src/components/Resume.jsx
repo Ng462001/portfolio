@@ -64,8 +64,8 @@ const Resume = () => {
 
               <div className="resume-item">
                 <h4>Web Developer Intern</h4>
-                <p ><em>Anweb Technology</em></p>
-                <h5 >Jan 2024 - Jun 2024</h5>
+                <p ><em>Digital Ipsum</em></p>
+                <h5 >1st May 2025 - 30th Jun 2025</h5>
 
                 <ul>
                   <li>
