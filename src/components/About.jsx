@@ -10,7 +10,7 @@ const About = () => {
           <p>
             I'm Nikhil Gahane from Bramhapuri, a passionate web developer with a strong foundation in full-stack
             development.
-            I have experience in HTML, CSS, JavaScript, React, Node.js and MySQL
+            I have experience in HTML, CSS, JavaScript, React, Node js, Express js and SQL
           </p>
         </div>
 
@@ -47,7 +47,7 @@ const About = () => {
                   <ul>
                     <li>
                       <i className="bi bi-chevron-right" />{' '}
-                      <strong>Age:</strong> <span>23</span>
+                      <strong>Age:</strong> <span>24</span>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right" />{' '}
@@ -75,7 +75,7 @@ const About = () => {
       <section id="skills" className="skills section light-background">
         <div className="container section-title" data-aos="fade-up">
           <h2>Skills</h2>
-          <p>I have experience in HTML, CSS, JavaScript, React, Node.js, and MySQL.</p>
+          <p>I have experience in HTML, CSS, JavaScript, React, Node js, Express js and SQL.</p>
         </div>
 
         <div className="container" data-aos="fade-up" data-aos-delay="100">
@@ -101,7 +101,7 @@ const About = () => {
             </div>
 
             <div className="col-lg-6">
-              {['React', 'Node and Express', 'MySQL'].map((skill, index) => (
+              {['React', 'Node and Express', 'SQL'].map((skill, index) => (
                 <div className="progress" key={index}>
                   <span className="skill">
                     <span>{skill}</span> <i className="val">{[80, 60, 70][index]}%</i>

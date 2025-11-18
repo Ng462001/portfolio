@@ -63,14 +63,14 @@ const Resume = () => {
               <h3 className="resume-title">Internship</h3>
 
               <div className="resume-item">
-                <h4>Web Developer Intern</h4>
-                <p ><em>Anweb Technology</em></p>
-                <h5 >Jan 2024 - Jun 2024</h5>
+                <h4>Web Development Intern</h4>
+                <p ><em>Digital Ipsum</em></p>
+                <h5 >May 2025 - Nov 2025</h5>
 
                 <ul>
                   <li>
                     Designed and developed a website with flawless payment gateway integration, Demonstrating Mastery in HTML5, CSS3,
-                    Bootstrap, React and Node Express.
+                    Bootstrap, React, Node js and Express js.
                   </li>
                   <li>
                     Created an exceptional User experience and ensure seamless functionality.
@@ -84,8 +84,6 @@ const Resume = () => {
                   <li>
                     Optimized web pages for faster load times and efficient resource management.
                   </li>
-
-
                 </ul>
               </div>
             </div>
@@ -99,7 +97,7 @@ const Resume = () => {
                 <h5>May 2024</h5>
                 <p>
                   <em>
-                    React, Bootstrap, Node, Express, MySQL (MERN)
+                    React, Bootstrap, Node js, Express js, MySQL (MERN)
                   </em>
                 </p>
                 <ul>
@@ -116,7 +114,7 @@ const Resume = () => {
                     content efficiently.
                   </li>
                   <li>
-                    <a href="https://ngtech-olive.vercel.app" target='_blank'>Project Link</a>
+                    <a href="https://ngtech-olive.vercel.app" target='_blank'>Live Link</a>
                   </li>
                 </ul>
               </div>
@@ -141,7 +139,7 @@ const Resume = () => {
                     Integrated responsive design and intuitive UI using React to enhance user experience.
                   </li>
                   <li>
-                    <a href="https://jobsearchproject.vercel.app" target='_blank'>Project Link</a>
+                    <a href="https://jobsearchproject.vercel.app" target='_blank'>Live Link</a>
                   </li>
                 </ul>
               </div>
@@ -165,7 +163,7 @@ const Resume = () => {
                     Performance Optimization: Optimized website performance for faster loading times and better user experience.
                   </li>
                   <li>
-                    <a href="https://e-learning-project-live.vercel.app" target='_blank'>Project Link</a>
+                    <a href="https://e-learning-project-live.vercel.app" target='_blank'>Live Link</a>
                   </li>
                 </ul>
               </div>
