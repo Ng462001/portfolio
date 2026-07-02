@@ -22,6 +22,14 @@ const projects = [
         desc: "User Interface: Designed a clean and user-friendly interface with Bootstrap for responsiveness and consistent styling",
         github_link: "https://github.com/Ng462001/e-learning-site",
         website_link: "https://e-learning-project-live.vercel.app/"
+    },
+    {
+        title: "E-Commerce Website",
+        language: "React, Node.js, Express, MongoDB, Tailwind CSS, Material UI",
+        image_src: "/portfolio/e-commerce.png",
+        desc: "Developed a full-stack e-commerce platform with product listings, user authentication, and secure payment processing",
+        github_link: "https://github.com/Ng462001/ngstore-ecommerce",
+        website_link: "https://ngstore-ecommerce.vercel.app/"
     }
 ]
 
