@@ -9,7 +9,7 @@ const Resume = () => {
         <div className="container section-title" data-aos="fade-up">
           <h2>Resume</h2>
           <p >
-            I'm Nikhil Gahane from Bramhapuri, a passionate web developer with a strong foundation in full-stack
+            I'm Nikhil Gahane from Nagpur, a passionate web developer with a strong foundation in full-stack
             development.
             I thrive on creating user-centric solutions, solving complex problems, and contributing to innovative web applications. If you’re looking for a developer with a blend of creativity and technical expertise, I’m excited to connect and collaborate.
             Let’s build something amazing together! 🚀
@@ -38,7 +38,7 @@ const Resume = () => {
                   </em>
                 </p>
                 <ul>
-                  <li>Master Colony, Bramhapuri</li>
+                  <li>Ayodhya Nagar, Nagpur</li>
                   <li>9422498134</li>
                   <li>nikhil462001@gmail.com</li>
                 </ul>
@@ -93,8 +93,33 @@ const Resume = () => {
               <h3 className="resume-title">Projects</h3>
 
               <div className="resume-item">
+                <h4>E-Commerce Website</h4>
+                <h5>Jan 2026 - Present</h5>
+                <p>
+                  <em>
+                    React, Node, Express, MongoDB, Tailwind CSS, Material UI
+                  </em>
+                </p>
+                <ul>
+                  <li>
+                    Designed and developed a full-stack e-commerce website featuring product browsing, search, shopping cart,
+                    secure checkout and user account management.
+                  </li>
+                  <li>
+                    Implemented secure user authentication and authorization using JWT.                  </li>
+                  <li>
+                    Built an admin dashboard for managing products, categories, customers, and orders with complete CRUD functionality, enabling
+                    efficient store management.
+                  </li>
+                  <li>
+                    <a href="https://ngstore-ecommerce.vercel.app" target='_blank'>Live Link</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="resume-item">
                 <h4>E-Course Website</h4>
-                <h5>May 2024</h5>
+                <h5>Jan 2024 - May 2024</h5>
                 <p>
                   <em>
                     React, Bootstrap, Node js, Express js, MySQL (MERN)
@@ -143,37 +168,9 @@ const Resume = () => {
                   </li>
                 </ul>
               </div>
-
-              <div className="resume-item">
-                <h4>E-Learning Website</h4>
-                <h5>Dec 2024</h5>
-                <p>
-                  <em>
-                    HTML, CSS, Bootstrap, Javascript
-                  </em>
-                </p>
-                <ul>
-                  <li>
-                    User Interface: Designed a clean and user-friendly interface with Bootstrap for responsiveness and consistent styling.
-                  </li>
-                  <li>
-                    Responsive Design: Ensured compatibility across devices with mobile-first design principles using Bootstrap grid system.
-                  </li>
-                  <li>
-                    Performance Optimization: Optimized website performance for faster loading times and better user experience.
-                  </li>
-                  <li>
-                    <a href="https://e-learning-project-live.vercel.app" target='_blank'>Live Link</a>
-                  </li>
-                </ul>
-              </div>
-
             </div>
-
           </div>
-
         </div>
-
       </section>
     </>
   )

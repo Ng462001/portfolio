@@ -8,7 +8,7 @@ const About = () => {
         <div className="container section-title" data-aos="fade-up">
           <h2>About</h2>
           <p>
-            I'm Nikhil Gahane from Bramhapuri, a passionate web developer with a strong foundation in full-stack
+            I'm Nikhil Gahane from Nagpur, a passionate web developer with a strong foundation in full-stack
             development.
             I have experience in HTML, CSS, JavaScript, React, Node js, Express js and SQL
           </p>
@@ -39,7 +39,7 @@ const About = () => {
                     </li>
                     <li>
                       <i className="bi bi-chevron-right" />{' '}
-                      <strong>City:</strong> <span>Bramhapuri</span>
+                      <strong>City:</strong> <span>Nagpur</span>
                     </li>
                   </ul>
                 </div>
@@ -47,7 +47,7 @@ const About = () => {
                   <ul>
                     <li>
                       <i className="bi bi-chevron-right" />{' '}
-                      <strong>Age:</strong> <span>24</span>
+                      <strong>Age:</strong> <span>{new Date().getFullYear() - 2001}</span>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right" />{' '}

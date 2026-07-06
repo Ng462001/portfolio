@@ -22,7 +22,7 @@ const Contact = () => {
                   <i className="bi bi-geo-alt flex-shrink-0"></i>
                   <div>
                     <h3>Address</h3>
-                    <p>Master Colony, Kurza Road, Bramhapuri - 441206</p>
+                    <p>Ambika Nagar, Near Sai Mandir Road, Ayodhya Nagar, Nagpur - 440024</p>
                   </div>
                 </div>
                 {/* End Info Item */}
@@ -30,7 +30,7 @@ const Contact = () => {
                 <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                   <i className="bi bi-telephone flex-shrink-0"></i>
                   <div>
-                    <h3>Call Us</h3>
+                    <h3>Call Me</h3>
                     <p>+91 9422498134</p>
                   </div>
                 </div>
@@ -44,7 +44,7 @@ const Contact = () => {
                   </div>
                 </div>
                 {/* End Info Item */}
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.2447172859665!2d79.85879827485026!3d20.618879680929847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2c9b000001350d%3A0xa01a3f68e0b6305e!2sMASTER%20COLONY!5e0!3m2!1sen!2sin!4v1738301348149!5m2!1sen!2sin"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d609.1960771081116!2d79.10966493125099!3d21.11136321746786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1783352650413!5m2!1sen!2sin"
                   style={{ border: 0, width: '100%', height: '270px' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
                 </iframe>
               </div>
