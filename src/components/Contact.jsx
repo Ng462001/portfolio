@@ -44,7 +44,7 @@ const Contact = () => {
                   </div>
                 </div>
                 {/* End Info Item */}
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d609.1960771081116!2d79.10966493125099!3d21.11136321746786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1783352650413!5m2!1sen!2sin"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3315.9531262941796!2d79.10978178367148!3d21.111303665506156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4b9e50039e72b%3A0x48445d2a4094d84e!2sTirtha%20Tours%20And%20Travels!5e0!3m2!1sen!2sin!4v1785504631051!5m2!1sen!2sin"
                   style={{ border: 0, width: '100%', height: '270px' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
                 </iframe>
               </div>
@@ -127,7 +127,7 @@ const Contact = () => {
       <footer id="footer" className="footer position-relative light-background">
         <div className="container">
           <div className="copyright text-center">
-            <p>&copy; <span>Copyright 2025</span> <strong className="px-1 sitename">NGTech</strong> <span>All Rights Reserved</span></p>
+            <p>&copy; <span>Copyright 2025 - 2026</span> <strong className="px-1 sitename">NGTech</strong> <span>All Rights Reserved</span></p>
           </div>
           <div className="credits">
             Designed by Nikhil
