@@ -240,7 +240,7 @@ const ProjectDetails = () => {
                         />
                         <div className="position-absolute top-0 end-0 m-3">
                           <span className="badge bg-white text-dark px-3 py-1 rounded-pill shadow-sm fw-semibold">
-                            {item.language.split(",")[0]}
+                            {item.primaryStack[0]}
                           </span>
                         </div>
                       </div>
