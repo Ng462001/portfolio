@@ -72,7 +72,7 @@ const ProjectDetails = () => {
                 <h1 className="display-5 fw-bold mb-3" style={{ color: "#050d18" }}>{project.title}</h1>
                 <p className="lead text-secondary mb-3" style={{ fontSize: "1.15rem" }}>{project.desc}</p>
                 <div className="d-flex flex-wrap gap-2">
-                  {(project.techStack || project.language.split(",")).map((tech, idx) => (
+                  {project.techStack.map((tech, idx) => (
                     <span key={idx} className="badge px-3 py-2 rounded-pill" style={{ backgroundColor: "#ffffff", color: "#149ddd", border: "1px solid rgba(20, 157, 221, 0.3)", fontWeight: "500" }}>
                       {tech.trim()}
                     </span>
@@ -152,7 +152,7 @@ const ProjectDetails = () => {
                     <div className="d-flex justify-content-between align-items-center pt-1">
                       <span className="text-muted small fw-bold text-uppercase">Primary Stack</span>
                       <div className="text-end">
-                        {(project.techStack || project.language.split(",")).slice(0, 3).map((tech, idx) => (
+                        {project.primaryStack.map((tech, idx) => (
                           <span key={idx} className="badge ms-1" style={{ backgroundColor: "rgba(20, 157, 221, 0.1)", color: "#149ddd" }}>
                             {tech.trim()}
                           </span>
