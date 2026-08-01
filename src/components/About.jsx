@@ -62,7 +62,7 @@ const About = () => {
               </div>
               <p className="py-3">
                 I've worked on impactful projects, including an e-learning website using the MERN stack and a jobs-related
-                platform developed with React. During my internship at Anweb Technology, I honed my skills as a web
+                platform developed with React. During my internship at Digital Ipsum, I honed my skills as a web
                 developer.
               </p>
             </div>

@@ -30,10 +30,10 @@ const Resume = () => {
                 <h4>Nikhil Gahane</h4>
                 <p>
                   <em>
-                    "Passionate web developer with expertise in React and Spring Boot, experienced in building
+                    "Passionate web developer with hands-on experience in React and Node js, experienced in building
                     full-stack applications. Proficient in creating dynamic and user-friendly web solutions, including
-                    an e-learning platform (MERN stack) and a jobs-related project. Completed a web development
-                    internship at Anweb Technology, refining skills in frontend and backend technologies. Dedicated to
+                    an E-learning platform and a E-Commerce website project. Completed a web development
+                    internship at Digital Ipsum, refining skills in frontend and backend development. Dedicated to
                     delivering innovative, efficient, and engaging digital experiences."
                   </em>
                 </p>
