@@ -19,6 +19,38 @@ const projects = [
         website_link: "https://ngstore-ecommerce.vercel.app/"
     },
     {
+        "id": "student-management",
+        "title": "University Student Management System",
+        "language": "React, Spring Boot, MySQL, Bootstrap 5, REST API",
+        "techStack": [
+            "React",
+            "Bootstrap 5",
+            "REST API",
+            "Axios",
+            "Java",
+            "Spring Boot",
+            "Spring Security",
+            "JWT",
+            "Spring Data JPA",
+            "MySQL",
+        ],
+        "image_src": "/portfolio/student-management.png",
+        "desc": "Developed a full-stack university student management system for course enrollments, bulletin announcements, fee invoicing, attendance tracking, and administrative oversight.",
+        "fullDescription": "A comprehensive full-stack enterprise web application designed to streamline academic operations for educational institutions. Built with Java Spring Boot on the backend and React on the frontend, the platform serves two distinct user roles: Students and Administrators. Students can browse the university course catalog, view live seat capacities, enroll in or drop courses, monitor academic attendance percentages, and pay semester fee invoices online. Administrators have complete access to an Enterprise Administration Center, where they can create, update, and delete student accounts, manage active/inactive user statuses, publish campus bulletin announcements, issue fee invoices, and record course attendance logs. The system enforces strict security policies, including role-based authorization, inactive user restrictions, and administrative control access.",
+        "features": [
+            "Role-Based Access Control & Authorization (Admin and Student roles)",
+            "Inactive User Policy enforcement restricting inactive accounts from course enrollments and status edits",
+            "Interactive Course Catalog with real-time capacity tracking, course enrollment, and drop actions",
+            "Enterprise Administration Center for full CRUD management of users, courses, notices, fees, and attendance",
+            "Campus Bulletin Publisher with category filtering, target audience scoping, and pinned post capability",
+            "Student Fee Invoice & Payment system with invoice issuance, payment recording, and transaction reference numbers",
+            "Academic Attendance Logger with student enrollment validation and real-time attendance percentage calculations",
+            "Modern Glassmorphic Responsive UI with password visibility toggles and stateful loading indicators"
+        ],
+        "github_link": "https://github.com/Ng462001/student-management",
+        "website_link": "https://student-management-ng.vercel.app"
+    },
+    {
         id: "e-course",
         title: "E-Course Site",
         language: "React, Node.js, Express, MySQL",
