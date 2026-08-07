@@ -7,7 +7,10 @@ const Resume = () => {
 
         {/* Section Title */}
         <div className="container section-title" data-aos="fade-up">
-          <h2>Resume</h2>
+          <div className='d-flex justify-content-between align-items-center mt-4'>
+            <h2>Resume</h2>
+            <a href="https://res.cloudinary.com/duyu0hpog/image/upload/v1786093665/Resume_hnxagj.pdf" target='_blank' className="btn text-decoration-none" style={{ color: "#149ddd" }}> <i className="bi bi-download"></i> View Resume</a>
+          </div>
           <p >
             I'm Nikhil Gahane from Nagpur, a passionate web developer with a strong foundation in full-stack
             development.

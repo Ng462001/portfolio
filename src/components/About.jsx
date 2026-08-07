@@ -75,25 +75,25 @@ const About = () => {
       <section id="skills" className="skills section light-background">
         <div className="container section-title" data-aos="fade-up">
           <h2>Skills</h2>
-          <p>I have experience in HTML, CSS, JavaScript, React, Node js, Express js and SQL.</p>
+          <p>I have experience in HTML, CSS, JavaScript, React, Node js, Express js, Java, Spring Boot and SQL.</p>
         </div>
 
         <div className="container" data-aos="fade-up" data-aos-delay="100">
           <div className="row skills-content skills-animation">
             <div className="col-lg-6">
-              {['HTML', 'CSS', 'JavaScript'].map((skill, index) => (
+              {['HTML', 'CSS', 'JavaScript', 'React'].map((skill, index) => (
                 <div className="progress" key={index}>
                   <span className="skill">
-                    <span>{skill}</span> <i className="val">{[100, 90, 85][index]}%</i>
+                    <span>{skill}</span> <i className="val">{[100, 90, 85, 85][index]}%</i>
                   </span>
                   <div className="progress-bar-wrap">
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      aria-valuenow={[100, 90, 85][index]}
+                      aria-valuenow={[100, 90, 85, 85][index]}
                       aria-valuemin="0"
                       aria-valuemax="100"
-                      style={{ width: `${[100, 90, 85][index]}%` }}
+                      style={{ width: `${[100, 90, 85, 85][index]}%` }}
                     ></div>
                   </div>
                 </div>
@@ -101,19 +101,19 @@ const About = () => {
             </div>
 
             <div className="col-lg-6">
-              {['React', 'Node and Express', 'SQL'].map((skill, index) => (
+              {['Node and Express', 'SQL', 'Java', 'Spring Boot'].map((skill, index) => (
                 <div className="progress" key={index}>
                   <span className="skill">
-                    <span>{skill}</span> <i className="val">{[80, 60, 70][index]}%</i>
+                    <span>{skill}</span> <i className="val">{[80, 80, 80, 70][index]}%</i>
                   </span>
                   <div className="progress-bar-wrap">
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      aria-valuenow={[80, 60, 70][index]}
+                      aria-valuenow={[80, 80, 80, 70][index]}
                       aria-valuemin="0"
                       aria-valuemax="100"
-                      style={{ width: `${[80, 60, 70][index]}%` }}
+                      style={{ width: `${[80, 80, 80, 70][index]}%` }}
                     ></div>
                   </div>
                 </div>

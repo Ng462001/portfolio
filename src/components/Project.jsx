@@ -20,7 +20,7 @@ const Project = () => {
               <div className="card-body d-flex flex-column justify-content-between">
                 <div>
                   <h5 className="card-title fw-bold text-center">{project.title}</h5>
-                  <h6 className='text-muted text-center small mb-2'>{project.language}</h6>
+                  <h6 className='text-muted text-center small mb-2'>{project?.primaryStack?.join(" | ")}</h6>
                   <p className="card-text mt-2 mb-2" style={{ textAlign: "justify" }}>{project.desc}</p>
                 </div>
                 <div>
