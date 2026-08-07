@@ -4,7 +4,7 @@ import Typed from "typed.js";
 const Home = () => {
     useEffect(() => {
         const typed = new Typed(".typed", {
-            strings: ["ReactJs Developer", "Web Developer", "MERN Stack Developer", "Java Developer"],
+            strings: ["Full Stack Developer", "React Developer", "Web Developer"],
             typeSpeed: 100,
             backSpeed: 50,
             backDelay: 1000,

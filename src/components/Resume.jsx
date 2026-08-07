@@ -148,26 +148,27 @@ const Resume = () => {
               </div>
 
               <div className="resume-item">
-                <h4>Job Search Project</h4>
-                <h5>Jan 2025</h5>
+                <h4>Student Management System</h4>
+                <h5>May 2026 - Aug 2026</h5>
                 <p>
                   <em>
-                    HTML, CSS, Bootstrap, React
+                    React, Bootstrap, Spring Boot, MySQL
                   </em>
                 </p>
                 <ul>
                   <li>
-                    Implemented secure user authentication and authorization to ensure data protection.
+                    Designed and developed a comprehensive student management system to facilitate student management, featuring
+                    student listings, enrollment, and user profiles.
                   </li>
                   <li>
-                    Built features for fetching job posting, updates, and deletions, enabling Users to manage listings
-                    efficiently.
+                    Implemented secure user authentication and authorization mechanisms to protect user data and
+                    restrict access to student information.
                   </li>
                   <li>
                     Integrated responsive design and intuitive UI using React to enhance user experience.
                   </li>
                   <li>
-                    <a href="https://jobsearchproject.vercel.app" target='_blank'>Live Link</a>
+                    <a href="https://student-management-ng.vercel.app/" target='_blank'>Live Link</a>
                   </li>
                 </ul>
               </div>
