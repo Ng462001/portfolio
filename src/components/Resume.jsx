@@ -9,7 +9,7 @@ const Resume = () => {
         <div className="container section-title" data-aos="fade-up">
           <div className='d-flex justify-content-between align-items-center mt-4'>
             <h2>Resume</h2>
-            <a href="https://res.cloudinary.com/duyu0hpog/image/upload/v1786120967/Resume.pdf" target='_blank' className="btn text-decoration-none" style={{ color: "#149ddd" }}> <i className="bi bi-download"></i> View Resume</a>
+            <a href="https://res.cloudinary.com/duyu0hpog/image/upload/v1786268062/Nikhil_Gahane_Resume.pdf" target='_blank' className="btn text-decoration-none" style={{ color: "#149ddd" }}> <i className="bi bi-download"></i> View Resume</a>
           </div>
           <p >
             I'm Nikhil Gahane from Nagpur, a passionate web developer with a strong foundation in full-stack
