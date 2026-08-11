@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { portfolioData } from './data/portfolio';
-import { useSmoothScroll } from './hooks/useSmoothScroll';
+import { useSmoothScroll, scrollToTop } from './hooks/useSmoothScroll';
 
 import CustomCursor from './components/CustomCursor';
 import Navbar from './components/Navbar';
@@ -21,12 +21,12 @@ export default function App() {
 
   const handleSelectProject = (project) => {
     setSelectedProject(project);
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    scrollToTop(true);
   };
 
   const handleBackToHome = () => {
     setSelectedProject(null);
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    scrollToTop(true);
   };
 
   return (

@@ -29,7 +29,7 @@ export const portfolioData = {
   stats: [
     { label: "Full stack and mini Projects", value: 5, suffix: "+" },
     { label: "MCA Percentage", value: 71, suffix: "%" },
-    { label: "BCA Percentage", value: 81.1, suffix: "%" },
+    { label: "BCA Percentage", value: 81, suffix: "%" },
     { label: "Months Internship", value: 6, suffix: "+" },
   ],
 
@@ -150,7 +150,7 @@ export const portfolioData = {
       highlight: "Stripe Payment Gateway & JWT Authentication",
       shortDescription:
         "Built a full-stack e-commerce platform with product discovery, cart management, JWT authentication, admin controls, and secure Stripe payments.",
-      featured: true,
+      featured: false,
       image: "/portfolio/e-commerce.png",
       role: "Full Stack Developer",
       duration: "Jan 2026 — Present",
@@ -204,7 +204,7 @@ export const portfolioData = {
       highlight: "Spring Security, JWT & Role-Based Access Control",
       shortDescription:
         "Built a full-stack university management system for course enrollment, announcements, fee invoicing, attendance tracking, and administrative operations.",
-      featured: true,
+      featured: false,
       image: "/portfolio/student-management.png",
       role: "Full Stack Developer",
       duration: "May 2026 — Aug 2026",
@@ -272,7 +272,7 @@ export const portfolioData = {
       highlight: "MySQL Database & Course Administration",
       shortDescription:
         "Built a full-stack e-learning platform with course discovery, student enrollment, secure authentication, online payments, and administrative course management.",
-      featured: true,
+      featured: false,
       image: "/portfolio/e-learning.jpg",
       role: "Full Stack Developer",
       duration: "Jan 2024 — May 2024",

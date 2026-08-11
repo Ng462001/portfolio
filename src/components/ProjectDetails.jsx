@@ -12,9 +12,94 @@ import {
   Tag,
   ArrowRight,
   Send,
+  Code2,
+  FileCode,
+  Palette,
+  Server,
+  Database,
+  Share2,
+  Lock,
+  ShieldCheck,
+  Cloud,
+  CreditCard,
+  Coffee,
+  Globe,
+  Layout,
 } from "lucide-react";
 import { GithubIcon } from "./SocialIcons";
 import SectionReveal from "./SectionReveal";
+import { scrollToTop } from "../hooks/useSmoothScroll";
+
+// Mapping technology tags to custom Lucide icons, colors, and background accents
+const TAG_CONFIG = {
+  React: { icon: Code2, color: "#61DAFB", bg: "rgba(97, 218, 251, 0.12)" },
+  "Node.js": { icon: Server, color: "#43D443", bg: "rgba(67, 212, 67, 0.12)" },
+  Express: { icon: Server, color: "#F7DF1E", bg: "rgba(247, 223, 30, 0.12)" },
+  MongoDB: { icon: Database, color: "#47A248", bg: "rgba(71, 162, 72, 0.12)" },
+  "REST API": {
+    icon: Share2,
+    color: "#FF6C37",
+    bg: "rgba(255, 108, 55, 0.12)",
+  },
+  "Tailwind CSS": {
+    icon: Palette,
+    color: "#06B6D4",
+    bg: "rgba(6, 182, 212, 0.12)",
+  },
+  "Material UI": {
+    icon: Layers,
+    color: "#0081CB",
+    bg: "rgba(0, 129, 203, 0.12)",
+  },
+  JWT: { icon: Lock, color: "#F59E0B", bg: "rgba(245, 158, 11, 0.12)" },
+  Cloudinary: { icon: Cloud, color: "#3448C5", bg: "rgba(52, 72, 197, 0.12)" },
+  Stripe: { icon: CreditCard, color: "#635BFF", bg: "rgba(99, 91, 255, 0.12)" },
+  Java: { icon: Coffee, color: "#ED8B00", bg: "rgba(237, 139, 0, 0.12)" },
+  "Spring Boot": {
+    icon: Cpu,
+    color: "#6DB33F",
+    bg: "rgba(109, 179, 63, 0.12)",
+  },
+  "Spring Security": {
+    icon: ShieldCheck,
+    color: "#10B981",
+    bg: "rgba(16, 185, 129, 0.12)",
+  },
+  MySQL: { icon: Database, color: "#4479A1", bg: "rgba(68, 121, 161, 0.12)" },
+  "Spring Data JPA": {
+    icon: Database,
+    color: "#6DB33F",
+    bg: "rgba(109, 179, 63, 0.12)",
+  },
+  Axios: {
+    icon: CheckCircle2,
+    color: "#8B5CF6",
+    bg: "rgba(139, 92, 246, 0.12)",
+  },
+  "Bootstrap 5": {
+    icon: Palette,
+    color: "#A855F7",
+    bg: "rgba(168, 85, 247, 0.12)",
+  },
+  Bootstrap: {
+    icon: Palette,
+    color: "#A855F7",
+    bg: "rgba(168, 85, 247, 0.12)",
+  },
+  HTML5: { icon: Code2, color: "#E34F26", bg: "rgba(227, 79, 38, 0.12)" },
+  CSS3: { icon: FileCode, color: "#1572B6", bg: "rgba(21, 114, 182, 0.12)" },
+  JavaScript: {
+    icon: FileCode,
+    color: "#F7DF1E",
+    bg: "rgba(247, 223, 30, 0.12)",
+  },
+  CORS: { icon: Globe, color: "#00B4D8", bg: "rgba(0, 180, 216, 0.12)" },
+  "Responsive Web Design": {
+    icon: Layout,
+    color: "#38BDF8",
+    bg: "rgba(56, 189, 248, 0.12)",
+  },
+};
 
 export default function ProjectDetails({
   project,
@@ -23,7 +108,13 @@ export default function ProjectDetails({
   onSelectProject,
 }) {
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
+    scrollToTop(true);
+    const t1 = setTimeout(() => scrollToTop(true), 0);
+    const t2 = setTimeout(() => scrollToTop(true), 50);
+    return () => {
+      clearTimeout(t1);
+      clearTimeout(t2);
+    };
   }, [project]);
 
   if (!project) return null;
@@ -130,23 +221,77 @@ export default function ProjectDetails({
               </span>
             </div>
 
-            <div className="space-y-1">
+            <div className="space-y-1 relative group/tooltip cursor-pointer">
               <span className="text-[10px] font-mono text-slate-400 uppercase tracking-widest flex items-center gap-1">
                 <Tag className="w-3 h-3 text-violet-400" /> Core Stack
               </span>
-              <span className="text-base font-bold text-cyan-300 block truncate">
+              <span
+                title={project.category}
+                className="text-base font-bold text-cyan-300 block truncate"
+              >
                 {project.category}
               </span>
+              {/* Tooltip Popup */}
+              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover/tooltip:flex flex-col items-center z-50 pointer-events-none w-max max-w-xs sm:max-w-sm">
+                <div className="bg-slate-900 text-cyan-300 text-xs font-semibold px-3.5 py-2 rounded-xl shadow-2xl border border-cyan-500/40 backdrop-blur-md text-center leading-snug">
+                  {project.category}
+                </div>
+                <div className="w-2 h-2 -mt-1 bg-slate-900 border-r border-b border-cyan-500/40 rotate-45" />
+              </div>
             </div>
 
-            <div className="space-y-1">
+            <div className="space-y-1 relative group/tooltip cursor-pointer">
               <span className="text-[10px] font-mono text-slate-400 uppercase tracking-widest flex items-center gap-1">
                 <Sparkles className="w-3 h-3 text-emerald-400" /> Key Highlight
               </span>
-              <span className="text-base font-bold text-emerald-400 block truncate">
+              <span
+                title={project.highlight}
+                className="text-base font-bold text-emerald-400 block truncate"
+              >
                 {project.highlight}
               </span>
+              {/* Tooltip Popup */}
+              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover/tooltip:flex flex-col items-center z-50 pointer-events-none w-max max-w-xs sm:max-w-sm">
+                <div className="bg-slate-900 text-emerald-300 text-xs font-semibold px-3.5 py-2 rounded-xl shadow-2xl border border-emerald-500/40 backdrop-blur-md text-center leading-snug">
+                  {project.highlight}
+                </div>
+                <div className="w-2 h-2 -mt-1 bg-slate-900 border-r border-b border-emerald-500/40 rotate-45" />
+              </div>
             </div>
+          </div>
+        </SectionReveal>
+
+        {/* Full Technology Stack Pills */}
+        <SectionReveal className="p-8 sm:p-10 rounded-3xl bg-white/[0.02] border border-white/10 space-y-6">
+          <h3 className="text-xl font-bold text-white flex items-center gap-2.5">
+            <Cpu className="w-5 h-5 text-cyan-400" />
+            Technologies & Tools Utilized
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            {project.tags.map((tag) => {
+              const conf = TAG_CONFIG[tag] || {
+                icon: Code2,
+                color: "#38BDF8",
+                bg: "rgba(56, 189, 248, 0.12)",
+              };
+              const TagIcon = conf.icon;
+              return (
+                <div
+                  key={tag}
+                  className="px-4 py-2.5 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/15 hover:border-cyan-400/40 text-sm font-mono text-slate-200 transition-all flex items-center gap-2.5 shadow-md hover:scale-[1.03] group cursor-default"
+                >
+                  <div
+                    className="w-6 h-6 rounded-lg flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform"
+                    style={{ backgroundColor: conf.bg, color: conf.color }}
+                  >
+                    <TagIcon className="w-3.5 h-3.5" />
+                  </div>
+                  <span className="font-semibold text-slate-200 group-hover:text-white transition-colors">
+                    {tag}
+                  </span>
+                </div>
+              );
+            })}
           </div>
         </SectionReveal>
 
@@ -282,23 +427,6 @@ export default function ProjectDetails({
                   </p>
                 </div>
               </div>
-            ))}
-          </div>
-        </SectionReveal>
-
-        {/* Full Technology Stack Pills */}
-        <SectionReveal className="p-8 sm:p-10 rounded-3xl bg-white/[0.02] border border-white/10 space-y-6">
-          <h3 className="text-xl font-bold text-white">
-            Technologies & Tools Utilized
-          </h3>
-          <div className="flex flex-wrap gap-2.5">
-            {project.tags.map((tag) => (
-              <span
-                key={tag}
-                className="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/15 text-sm font-mono text-cyan-300 transition-colors"
-              >
-                {tag}
-              </span>
             ))}
           </div>
         </SectionReveal>
