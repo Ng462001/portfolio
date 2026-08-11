@@ -388,10 +388,44 @@ export default function ProjectDetails({
             </div>
           </div>
 
-          <div className="p-6 rounded-2xl bg-[#040406] border border-white/10 font-mono text-sm leading-relaxed text-slate-300 space-y-3 overflow-x-auto">
-            <div className="text-xs text-slate-500">
-              // Technical Blueprint & Stack Pipeline
+          {/* Visual Architecture & Data Flow Pipeline */}
+          {project.architectureFlow && project.architectureFlow.length > 0 && (
+            <div className="space-y-3">
+              <div className="flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+                <Sparkles className="w-4 h-4 text-cyan-400" />
+                <span>Architecture & Data Flow Pipeline</span>
+              </div>
+              <div className="p-6 rounded-2xl bg-[#040406]/90 border border-white/10 backdrop-blur-md overflow-x-auto">
+                <div className="flex items-center gap-3 min-w-max py-2">
+                  {project.architectureFlow.map((step, idx) => (
+                    <React.Fragment key={idx}>
+                      <div className="flex items-center gap-3 p-4 rounded-xl bg-white/[0.03] border border-cyan-500/20 hover:border-cyan-400/60 hover:bg-cyan-500/[0.06] transition-all duration-300 group hover:shadow-[0_0_20px_rgba(6,182,212,0.15)]">
+                        <div className="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-300 font-mono text-xs font-bold group-hover:scale-110 group-hover:bg-cyan-500/20 transition-all shrink-0">
+                          0{idx + 1}
+                        </div>
+                        <div>
+                          <span className="text-[10px] font-mono text-cyan-400/80 block uppercase tracking-widest">
+                            {step.layer}
+                          </span>
+                          <span className="text-sm font-bold text-white group-hover:text-cyan-300 transition-colors">
+                            {step.title}
+                          </span>
+                        </div>
+                      </div>
+
+                      {idx < project.architectureFlow.length - 1 && (
+                        <div className="flex items-center text-cyan-400/60 shrink-0 px-1 animate-pulse">
+                          <ArrowRight className="w-5 h-5" />
+                        </div>
+                      )}
+                    </React.Fragment>
+                  ))}
+                </div>
+              </div>
             </div>
+          )}
+
+          <div className="p-6 rounded-2xl bg-[#040406] border border-white/10 font-mono text-sm leading-relaxed text-slate-300 space-y-3 overflow-x-auto">
             <p className="text-cyan-300 font-semibold">
               {project.systemArchitecture}
             </p>
@@ -418,14 +452,9 @@ export default function ProjectDetails({
                 <div className="p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 shrink-0 group-hover:scale-110 transition-transform">
                   <CheckCircle2 className="w-5 h-5" />
                 </div>
-                <div className="space-y-1">
-                  <span className="text-xs font-mono text-slate-400">
-                    Feature #{idx + 1}
-                  </span>
-                  <p className="text-base text-slate-200 leading-relaxed">
-                    {feature}
-                  </p>
-                </div>
+                <p className="text-base text-slate-200 leading-relaxed">
+                  {feature}
+                </p>
               </div>
             ))}
           </div>

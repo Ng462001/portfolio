@@ -185,6 +185,14 @@ export const portfolioData = {
       systemArchitecture:
         "React frontend, Express REST APIs, Node.js backend, MongoDB database, Stripe payment gateway, Cloudinary media storage, and JWT-based authentication.",
 
+      architectureFlow: [
+        { layer: "Presentation", title: "React SPA" },
+        { layer: "API Gateway", title: "Express REST API" },
+        { layer: "Authentication", title: "Node.js & JWT Auth" },
+        { layer: "Database", title: "MongoDB" },
+        { layer: "Services", title: "Stripe & Cloudinary" },
+      ],
+
       keyFeatures: [
         "JWT-based user authentication and authorization",
         "Product catalog with search, filtering, and sorting",
@@ -247,6 +255,14 @@ export const portfolioData = {
 
       systemArchitecture:
         "React frontend, Java Spring Boot REST APIs, Spring Security, JWT authentication, Spring Data JPA, and MySQL relational database.",
+
+      architectureFlow: [
+        { layer: "Presentation", title: "React SPA" },
+        { layer: "API Gateway", title: "REST API" },
+        { layer: "Security & Auth", title: "Spring Security / JWT" },
+        { layer: "Data Access", title: "Spring Data JPA" },
+        { layer: "Database", title: "MySQL Database" },
+      ],
 
       keyFeatures: [
         "Role-Based Access Control for Admin and Student users",
@@ -315,6 +331,14 @@ export const portfolioData = {
       systemArchitecture:
         "React frontend, Node.js and Express REST APIs, MySQL relational database, JWT authentication, Axios API communication, and Stripe payment integration.",
 
+      architectureFlow: [
+        { layer: "Presentation", title: "React SPA" },
+        { layer: "API Layer", title: "Node.js & Express API" },
+        { layer: "Security", title: "JWT Auth" },
+        { layer: "Database", title: "MySQL Database" },
+        { layer: "Services", title: "Stripe Payments" },
+      ],
+
       keyFeatures: [
         "Course browsing and search functionality",
         "Student registration, login, and JWT authentication",
@@ -379,6 +403,13 @@ export const portfolioData = {
       systemArchitecture:
         "React single-page application communicating with REST APIs through Axios for job listings, filtering, applications, and CRUD operations.",
 
+      architectureFlow: [
+        { layer: "Presentation", title: "React SPA" },
+        { layer: "HTTP Client", title: "Axios Client" },
+        { layer: "REST API", title: "Node.js & Express API" },
+        { layer: "Data Operations", title: "CRUD Engine" },
+      ],
+
       keyFeatures: [
         "Job search and filtering by category, location, and employment type",
         "Dynamic job listing retrieval through REST APIs",
@@ -437,6 +468,12 @@ export const portfolioData = {
 
       systemArchitecture:
         "Semantic HTML5 structure, CSS3 styling and animations, Bootstrap 5 responsive grid system, and client-side JavaScript functionality.",
+
+      architectureFlow: [
+        { layer: "Structure", title: "Semantic HTML5" },
+        { layer: "Styling & Layout", title: "CSS3 & Bootstrap 5" },
+        { layer: "Client Logic", title: "JavaScript Engine" },
+      ],
 
       keyFeatures: [
         "Modern and responsive e-learning interface",
