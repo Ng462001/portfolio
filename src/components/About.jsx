@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Briefcase, GraduationCap, Calendar, Download, MapPin } from "lucide-react";
+import {
+  Briefcase,
+  GraduationCap,
+  Calendar,
+  Download,
+  MapPin,
+} from "lucide-react";
 import SectionReveal from "./SectionReveal";
 
 export default function About({
@@ -78,12 +84,10 @@ export default function About({
                 <img
                   src={personal.profileImage || "/myimage.jpg"}
                   alt={personal.name}
-                  className="w-full h-full object-cover rounded-2xl filter contrast-105 group-hover:scale-105 transition-all duration-700"
+                  className="w-full h-full object-cover object-top rounded-2xl transition-transform duration-700 group-hover:scale-105"
                 />
-
-                {/* Glass Tag Overlay */}
-                <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-[#070709]/80 backdrop-blur-md border border-white/15 text-center">
-                  <span className="text-xs font-mono font-bold text-white tracking-wide">
+                <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-[#070709]/85 backdrop-blur-md border border-white/15 text-center">
+                  <span className="text-sm font-mono font-bold text-white tracking-wide">
                     {personal.title}
                   </span>
                 </div>
